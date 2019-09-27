@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { TimelineLite, CSSPlugin } from "gsap/all";
+import { TimelineLite } from 'gsap/all';
+import CSSPlugin from 'gsap/CSSPlugin';
 import { Button, Container, Row, Col, Form, FormGroup, Input } from 'reactstrap'
 import Loading from "./Loading";
 import mp4 from '../assets/confess.mp4'
@@ -7,6 +8,8 @@ import mp3 from '../assets/end.mp3'
 import yesImg from '../assets/ls.gif'
 import noImg from '../assets/hb.gif'
 import axios from 'axios';
+
+const C = CSSPlugin;
 
 // icons will be animated using a stagger method
 const iconsArray = [

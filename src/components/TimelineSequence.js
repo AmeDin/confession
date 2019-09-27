@@ -1,8 +1,11 @@
 import React, { Component, useState } from "react";
-import { TimelineLite, CSSPlugin } from "gsap/all";
+import { TimelineLite } from 'gsap/all';
+import CSSPlugin from 'gsap/CSSPlugin';
 import Loading from "./Loading";
 import { useAuth } from "../context/auth";
 import Access from './Access';
+
+const C = CSSPlugin;
 
 // icons will be animated using a stagger method
 const iconsArray = [
