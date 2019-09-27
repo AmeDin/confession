@@ -116,7 +116,8 @@ class HiddenPage extends Component {
 		this.logoTl7.set(this.noCloseContent, { autoAlpha: 1 })
 			.from(this.noCloseline, 3, { left: -100, autoAlpha: 0 }, "-=0.25");
 	
-			
+		
+		document.querySelector("#endmp3").play()
 	}
 
 	onDetailChange = (e) => {
@@ -183,6 +184,9 @@ class HiddenPage extends Component {
 			.to(this.line2, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line1, 0.2, { opacity: 0, autoAlpha: 0 });
 		this.logoTlB.play()
+		
+		document.querySelector("#endmp3").pause();
+		document.querySelector("#endmp3").currentTime = 0;
 		setTimeout(() => {
 			document.querySelector(".content").style.display = "none"
 			document.querySelector(".videoContent").style.display = "inline"
