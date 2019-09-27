@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import TimelineSequence from './components/TimelineSequence';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './app.css';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import { AuthContext } from "./context/auth";
 import PrivateRoute from './PrivateRoute';
