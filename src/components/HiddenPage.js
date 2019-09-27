@@ -124,26 +124,22 @@ class HiddenPage extends Component {
 	
 	sendNumber = (e) => {
 		e.preventDefault();
+		if (!e.target.checkValidity()) {
+			alert("Please input your number")
+			return;
+		}
 		const answer = this.state.answer;
 		const details = this.state.details;
         axios.post("api/confession", {
 			answer,
 			details
 		  }).then(result => {
-			if (result.status === 200) {
-				this.logoTl4
-				.set(this.yesContent, 0.5, { opacity: 0, autoAlpha: 0 })
-				.from(this.yesline, 0.5, { opacity: 0, autoAlpha: 0 })
-				.from(this.form,  0.5, { opacity: 0, autoAlpha: 0 });
-				this.logoTl4.play()
-			setTimeout(() => {
-				document.querySelector(".yesContent").style.display = "none";
-				document.querySelector(".yesCloseContent").style.display = "inline";
-				this.logoTl6.play()
-			}, 2000);
-			} else {
-			  
-			}
+				this.logoTl4.reverse()
+				setTimeout(() => {
+					document.querySelector(".yesContent").style.display = "none";
+					document.querySelector(".yesCloseContent").style.display = "inline";
+					this.logoTl6.play()
+				}, 1500);
 		  }).catch(e => {
 			
 		  });
@@ -156,11 +152,12 @@ class HiddenPage extends Component {
 			answer,
 			details
 		  }).then(result => {
-			if (result.status === 200) {
-
-			} else {
-			  
-			}
+			this.logoTl5.reverse()
+			setTimeout(() => {
+				document.querySelector(".noContent").style.display = "none";
+				document.querySelector(".noCloseContent").style.display = "inline";
+				this.logoTl7.play()
+			}, 1500);
 		  }).catch(e => {
 			
 		  });
@@ -348,7 +345,7 @@ class HiddenPage extends Component {
 					<div className="yesContent" ref={ div => this.yesContent = div }>
 						<h1 ref={ h1 => this.yesline = h1 }>Enter in your phone number</h1>
 						<div ref={ div => this.form = div}>
-							<Form onSubmit={this.sendNumber}>
+							<Form onSubmit={this.sendNumber} >
 								<FormGroup>
 									<Input 
 										type="text"
@@ -356,6 +353,7 @@ class HiddenPage extends Component {
 										id="phonenumber"
 										placeholder="••••••••••"
 										onChange={this.onDetailChange}
+										required
 										/>
 								</FormGroup>
 								<FormGroup>
@@ -385,6 +383,13 @@ class HiddenPage extends Component {
 							block>
 							I'm not ready to commit to relationship yet
 						</Button>
+						<Button 
+							onClick={this.sendReject}
+							color="dark"
+							style={{marginTop: '2rem', backgroundColor: "#73b102"}}
+							block>
+							I don't have the answers at the moment. Give me some time to think about it.
+						</Button>
 						<Button
 							onClick={this.sendReject}
 							color="dark"
@@ -394,12 +399,12 @@ class HiddenPage extends Component {
 						</Button>
 						</div>
 					</div>
-					<div className="yesClose" ref={ div => this.yesCloseContent = div }>
+					<div className="yesCloseContent" ref={ div => this.yesCloseContent = div }>
 						<img  src={yesImg} alt="success" />
 						<h1 ref={ h1 => this.yesCloseline = h1 }>I will ping you up in a moment! :)</h1>
 					</div>
 					
-					<div className="noClose" ref={ div => this.noCloseContent = div }>
+					<div className="noCloseContent" ref={ div => this.noCloseContent = div }>
 						<img  src={noImg} alt="success" />
 						<h1 ref={ h1 => this.noCloseline = h1 }>I see, I shall respect your decision.</h1>
 					</div>

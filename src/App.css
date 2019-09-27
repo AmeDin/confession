@@ -89,12 +89,12 @@ body {
       display : none;
       visibility: hidden;
   }
-  .yesClose {
+  .yesCloseContent {
       padding-left: 15px;
       display : none;
       visibility: hidden;
   }
-  .noClose {
+  .noCloseContent {
       padding-left: 15px;
       display : none;
       visibility: hidden;
