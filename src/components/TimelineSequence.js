@@ -39,6 +39,7 @@ class TimelineSequence extends Component {
 			.from(this.warn, 5, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			.from(this.form, 5, { scale: .5, autoAlpha: 0 }, "feature") // added 0.5 seconds after end of timeline
 			.staggerFrom(this.icons, 0.5, { scale: 0, autoAlpha: 0 }, 0.1); //animate all icons with 0.1 second stagger
+		this.logoTl.play()
 	}
 
 	render(){
@@ -53,8 +54,8 @@ class TimelineSequence extends Component {
 
 						<div className="content" ref={ div => this.content = div }>
                             <div ref={ div => this.head = div}><Loading /></div>
-							<h2 ref={ h2 => this.subhead = h2 }>You've landed on this page because you received a link from a certain person</h2>
-                            <h2 ref={ h2 => this.warn = h2 }>The passcode only work once, access further if u have at least 10 minutes to spare.</h2>
+							<h2 ref={ h2 => this.subhead = h2 }>You have landed on this page using the link you received.</h2>
+                            <h2 ref={ h2 => this.warn = h2 }>The passcode only works once; only press "Enter" if you have at least 10 minutes to spare.</h2>
                             <div ref={ div => this.form = div}>
                                 <Access props={this.props}/>
                             </div>
@@ -74,7 +75,7 @@ class TimelineSequence extends Component {
 					</div>
 
 					{/* BUTTONS */}
-					<div className="my-3 btn-group">
+					{/* <div className="my-3 btn-group">
 						<button
 							className="btn gsap-btn"
 							onClick={() => this.logoTl.play()}
@@ -91,7 +92,7 @@ class TimelineSequence extends Component {
 							className="btn gsap-btn"
 							onClick={() => this.logoTl.restart()}
 						>Restart</button>
-					</div>
+					</div> */}
 
 				</div>
 			</div>

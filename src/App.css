@@ -60,7 +60,6 @@ body {
       margin: 0 auto;
       margin-top: 2em;
       width: 600px;
-      height: 600px;
       -webkit-font-smoothing: antialiased;
       color: black;
       overflow: hidden;
@@ -68,6 +67,36 @@ body {
   
   .content {
       padding-left: 15px;
+      visibility: hidden;
+  }
+  .videoContent {
+      padding-left: 15px;
+      display : none;
+      visibility: hidden;
+  }
+  .endingContent {
+      padding-left: 15px;
+      display : none;
+      visibility: hidden;
+  }
+  .yesContent {
+      padding-left: 15px;
+      display : none;
+      visibility: hidden;
+  }
+  .noContent {
+      padding-left: 15px;
+      display : none;
+      visibility: hidden;
+  }
+  .yesClose {
+      padding-left: 15px;
+      display : none;
+      visibility: hidden;
+  }
+  .noClose {
+      padding-left: 15px;
+      display : none;
       visibility: hidden;
   }
   .feature {
