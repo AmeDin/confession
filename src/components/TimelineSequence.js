@@ -64,7 +64,7 @@ class TimelineSequence extends Component {
 							<h2 ref={ h2 => this.subhead = h2 }>You have landed on this page using the link you received.</h2>
 							{/* <h2 ref={ h2 => this.msg2 = h2 }>For better experience, turn on the volume.</h2> */}
                             <h2 ref={ h2 => this.warn = h2 }>The passcode only works once; only press "Enter" if you have at least 10 minutes to spare.</h2>
-							<h2 ref={ h2 => this.msg = h2 }>Please ensure that sound is turned on before clicking "Enter".</h2>
+							<h2 ref={ h2 => this.msg = h2 }>Please ensure that your sound is turned up before clicking "Enter".</h2>
                             <div ref={ div => this.form = div}>
                                 <Access props={this.props}/>
                             </div>
