@@ -41,7 +41,7 @@ function Access(props) {
                 type="text"
                 name="code"
                 id="code"
-                placeholder="••••••••••"
+                placeholder="Passcode"
                 onChange={e => {
                     setPasscode(e.target.value);
                     }}

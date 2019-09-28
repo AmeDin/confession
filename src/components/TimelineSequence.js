@@ -25,8 +25,8 @@ class TimelineSequence extends Component {
 		this.content = null;
 		this.head = null;
 		this.subhead = null;
-		// this.msg = null;
 		// this.ms2 = null;
+		this.msg = null;
 		this.warn = null;
 		this.form = null;
 		this.icons = [];
@@ -41,9 +41,9 @@ class TimelineSequence extends Component {
 			.from(this.head, 4, { top: 100, autoAlpha: 0 })
 			.to(this.head, 2, { opacity: 0, autoAlpha: 0 })
 			.from(this.subhead, 4, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
-			// .from(this.msg, 2, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			// .from(this.msg2, 2, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			.from(this.warn, 5, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
+			.from(this.msg, 2, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			.from(this.form, 5, { scale: .5, autoAlpha: 0 }, "feature") // added 0.5 seconds after end of timeline
 			.staggerFrom(this.icons, 0.5, { scale: 0, autoAlpha: 0 }, 0.1); //animate all icons with 0.1 second stagger
 		this.logoTl.play()
@@ -62,9 +62,9 @@ class TimelineSequence extends Component {
 						<div className="content" ref={ div => this.content = div }>
                             <div ref={ div => this.head = div}><Loading /></div>
 							<h2 ref={ h2 => this.subhead = h2 }>You have landed on this page using the link you received.</h2>
-							{/* <h2 ref={ h2 => this.msg = h2 }>This site is responsive, but viewing it on desktop/laptop would be better.</h2>
-							<h2 ref={ h2 => this.msg2 = h2 }>For better experience, turn on the volume.</h2> */}
+							{/* <h2 ref={ h2 => this.msg2 = h2 }>For better experience, turn on the volume.</h2> */}
                             <h2 ref={ h2 => this.warn = h2 }>The passcode only works once; only press "Enter" if you have at least 10 minutes to spare.</h2>
+							<h2 ref={ h2 => this.msg = h2 }>Please ensure that sound is turned on before clicking "Enter".</h2>
                             <div ref={ div => this.form = div}>
                                 <Access props={this.props}/>
                             </div>

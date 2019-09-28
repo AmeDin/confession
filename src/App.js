@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import { AuthContext } from "./context/auth";
 import PrivateRoute from './PrivateRoute';
 import HiddenPageHook from './components/HiddenPageHook';
-import HiddenPage from './components/HiddenPage';
+// import HiddenPage from './components/HiddenPage';
 
 function App(props) {
   const [authTokens, setAuthTokens] = useState();
@@ -21,7 +21,7 @@ function App(props) {
     <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
       <Router>
           <Route exact path="/" component={TimelineSequence} />
-          <Route exact path="/hide" component={HiddenPage} />
+          {/* <Route exact path="/hide" component={HiddenPage} /> */}
           <PrivateRoute path="/hidden" component={HiddenPageHook} />
       </Router>
     </AuthContext.Provider>
