@@ -272,7 +272,7 @@ class HiddenPage extends Component {
                             <h2 ref={ h2 => this.line7 = h2 }>To leverage on rap which I expertise.</h2>
                             <h2 ref={ h2 => this.line8 = h2 }>Tinkering with music composed by eminem whom i idolise.</h2>
                             <h2 ref={ h2 => this.line9 = h2 }>With his lyrics i had improvise.</h2>
-                            <h2 ref={ h2 => this.line10 = h2 }>Singing it myself would just jeopardise.</h2>
+                            <h2 ref={ h2 => this.line10 = h2 }>Rapping it myself would just jeopardise.</h2>
                             <h2 ref={ h2 => this.line11 = h2 }>This music video is a confession to surprise.</h2>
                             <h2 ref={ h2 => this.line12 = h2 }>Milady, Elise.</h2>
 							<div ref={ div => this.btnContinue = div}>
@@ -319,8 +319,7 @@ class HiddenPage extends Component {
 								</Col>
 							</Row>
 						</Container>
-					</div>
-					<div className="endingContent" ref={ div => this.endingContent = div }>
+						<div className="endingContent" ref={ div => this.endingContent = div }>
 						<h1 ref={ h1 => this.line = h1 }>Would you go out with me?</h1>
 							<Container>
 								<Row>
@@ -415,6 +414,8 @@ class HiddenPage extends Component {
 						<img  src={noImg} alt="success" />
 						<h1 ref={ h1 => this.noCloseline = h1 }>I see, I shall respect your decision.</h1>
 					</div>
+				</div>
+					
 
 					{/* BUTTONS */}
 					{/* <div className="my-3 btn-group">

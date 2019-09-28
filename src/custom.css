@@ -26,6 +26,15 @@ body {
   }
   
   @media screen and (min-width: 800px) {
+    .demoWrapper {
+        margin: 0 auto;
+        margin-top: 2em;
+        -webkit-font-smoothing: antialiased;
+        color: black;
+        overflow: hidden;
+        max-width: 600px;
+        min-height: 600px;
+    }
     .verticalcenter {
       margin: 0;
       position: absolute;
