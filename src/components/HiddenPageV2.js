@@ -9,16 +9,9 @@ import mp3 from '../assets/end.mp3'
 import yesImg from '../assets/ls.gif'
 import noImg from '../assets/hb.gif'
 import axios from 'axios';
-import AudioPlayer from "react-h5-audio-player";
 
 const C = CSSPlugin;
 
-// icons will be animated using a stagger method
-const iconsArray = [
-	{ src: "https://image.shutterstock.com/image-vector/10-minutes-timer-260nw-197413463.jpg", width: "83", height: "59" },
-	{ src: "https://previews.123rf.com/images/dirkercken/dirkercken1401/dirkercken140100156/25263130-ready-to-go-or-job-done-slogan-icon-or-sign-work-accomplished-finished-and-well-done-.jpg", width: "83", height: "59" },
-	{ src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYglyJRwnFj9od7emyGblacb1nQZd6V0nalMhZ0HhaPoIkycS", width: "83", height: "59" }
-];
 
 class HiddenPageV2 extends Component {
 	
@@ -125,11 +118,9 @@ class HiddenPageV2 extends Component {
 		this.logoTl5.set(this.endingModal, { autoAlpha: 1 })
         .from(this.rejectedman, 3, { right: -100, autoAlpha: 0 }, "-=0.25");
 	
-        // console.log(this.player)
         this.onTrackChange(mp3)
         this.onTrackChange(mp3)
 
-		// document.querySelector("#endmp3").play()
 	}
 
 	onDetailChange = (e) => {
@@ -202,8 +193,6 @@ class HiddenPageV2 extends Component {
 		this.logoTlB.play()
         
         this.onTrackPause(mp3)
-		// document.querySelector("#endmp3").pause();
-		// document.querySelector("#endmp3").currentTime = 0;
 		setTimeout(() => {
 			document.querySelector(".content").style.display = "none"
 			document.querySelector(".videoContent").style.display = "inline"
@@ -224,7 +213,6 @@ class HiddenPageV2 extends Component {
 			document.querySelector(".videoContent").style.display = "none";
             document.querySelector(".endingContent").style.display = "inline";
             this.onTrackChange(mp3)
-			// document.querySelector("#endmp3").play()
 			this.logoTl3.play()
 		  }, 2500);
 		
@@ -269,10 +257,6 @@ class HiddenPageV2 extends Component {
 
 					<div className="demoWrapper">
                         
-                        {/* <AudioPlayer 
-                            hidePlayer
-                            src={mp3}
-                            ref={c => (this.player = c)} /> */}
 						<audio controls loop ref="audio" className="invisible">
 							<source id="audioSource" src={this.state.isPlaying}type="audio/mp3"/>
 							Your browser does not support the audio element.
