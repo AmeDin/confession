@@ -17,7 +17,7 @@ class HiddenPageV3 extends Component {
 	
 	constructor(props){
 		super(props);
-		this.state = { details: '', answer: true, modalContinue: false, isPlaying: null};
+		this.state = { details: '', answer: true, modalContinue: false, isPlaying: null, isSafari: false};
 		this.logoTl = new TimelineLite({ paused:true });
 		this.logoTlB = new TimelineLite({ paused:true });
 		this.content = null;
@@ -58,6 +58,18 @@ class HiddenPageV3 extends Component {
 		this.endline11 = null;
 		this.endline12 = null;
 		this.yesImg = null;
+		
+		if(navigator.userAgent.indexOf("Safari") != -1){
+			this.addEventListener('touchstart', function (e) {
+				this.refs.audio.loop = true;
+				this.refs.audio.play();
+				this.refs.audio.pause();
+			});
+			this.setState({
+				isSafari: true
+			});
+		}
+
 		
     }
     
@@ -211,7 +223,7 @@ class HiddenPageV3 extends Component {
 
 					<div className="demoWrapper">
                         
-						<audio controls loop ref="audio" className="invisible mt-n5">
+						<audio controls loop ref="audio" className={this.state.isSafari ? 'isSafari': "invisible mt-n5"}>
 							<source id="audioSource" src={this.state.isPlaying}type="audio/mp3"/>
 							Your browser does not support the audio element.
 						</audio>

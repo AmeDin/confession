@@ -130,4 +130,8 @@ body {
   .gsap-btn:focus {
       background-color: #88ce02;
   }
+
+  .isSafari {
+    margin-top: -1rem!important;
+  }
   
