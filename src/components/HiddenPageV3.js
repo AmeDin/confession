@@ -281,7 +281,7 @@ class HiddenPageV3 extends Component {
                             <h2 ref={ h2 => this.endline3 = h2 }>To break this boundary.</h2>
                             <h2 ref={ h2 => this.endline4 = h2 }>Though thoughts of whether you're attached or not caused me to be cowardly.</h2>
                             <h2 ref={ h2 => this.endline5 = h2 }>The latter hopefully.</h2>
-                            <h2 ref={ h2 => this.endline6 = h2 }>So that we start making memory.</h2>
+                            <h2 ref={ h2 => this.endline6 = h2 }>So that we can start making memory.</h2>
                             <h2 ref={ h2 => this.endline7 = h2 }>That will last for eternity.</h2>
                             <h2 ref={ h2 => this.endline8 = h2 }>I like you, so would you go out with me?</h2>
                             <h2 ref={ h2 => this.endline9 = h2 }>There's no need to hurry.</h2>
