@@ -6,7 +6,6 @@ import { Button, Container, Row, Col, Form, FormGroup, Input,
 import Loading from "./Loading";
 import mp4 from '../assets/confess.mp4'
 import mp3 from '../assets/end.mp3'
-import btbf from '../assets/trimbtbf.mp3'
 import yesImg from '../assets/ls.gif'
 import noImg from '../assets/hb.gif'
 import axios from 'axios';
@@ -115,9 +114,9 @@ class HiddenPageV3 extends Component {
 			.from(this.yesImg, 3, { scale: .5, autoAlpha: 0 }, "feature");
 		
 			this.onTrackChange(mp3)
-		setTimeout(() => {
-			this.onTrackChange(mp3)
-		  }, 1000);
+		// setTimeout(() => {
+		// 	this.onTrackChange(mp3)
+		//   }, 1000);
 
 	}
 
