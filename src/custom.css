@@ -20,7 +20,8 @@ body {
   .verticalcenter {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 5%;
+    right:1%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
@@ -28,26 +29,17 @@ body {
   @media screen and (min-width: 800px) {
     .demoWrapper {
         margin: 0 auto;
-        margin-top: 2em;
         -webkit-font-smoothing: antialiased;
         color: black;
         overflow: hidden;
         max-width: 600px;
         min-height: 600px;
     }
-    .verticalcenter {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left:20%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
   }
   
   
   .w100 {
-    width:100%;
+    width:100px;
   }
   
   h1 {
@@ -65,7 +57,6 @@ body {
   }
   .demoWrapper {
       margin: 0 auto;
-      margin-top: 2em;
       -webkit-font-smoothing: antialiased;
       color: black;
       overflow: hidden;
@@ -81,7 +72,6 @@ body {
       visibility: hidden;
   }
   .endingContent {
-      padding-left: 15px;
       display : none;
       visibility: hidden;
   }

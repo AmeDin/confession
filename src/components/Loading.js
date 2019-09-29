@@ -5,7 +5,7 @@ export class Loading extends Component {
     render() {
         return (
             <div className="verticalcenter">
-                <img src ={loadgif} className="w100" />
+                <img src ={loadgif} className="w100"/>
             </div>
         )
     }

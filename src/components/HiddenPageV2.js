@@ -119,7 +119,6 @@ class HiddenPageV2 extends Component {
         .from(this.rejectedman, 3, { right: -100, autoAlpha: 0 }, "-=0.25");
 	
         this.onTrackChange(mp3)
-        this.onTrackChange(mp3)
 
 	}
 
@@ -257,7 +256,7 @@ class HiddenPageV2 extends Component {
 
 					<div className="demoWrapper">
                         
-						<audio controls loop ref="audio" className="invisible">
+						<audio controls loop ref="audio" className="invisible mt-n5">
 							<source id="audioSource" src={this.state.isPlaying}type="audio/mp3"/>
 							Your browser does not support the audio element.
 						</audio>
@@ -292,8 +291,7 @@ class HiddenPageV2 extends Component {
 									Your browser does not support HTML5 video.
 								</video>
 							</div> 
-						</div>
-						<Container>
+							<Container>
 							<Row>
 								<Col xs="6">
 									<div ref={ div => this.btnBack = div}>
@@ -319,6 +317,8 @@ class HiddenPageV2 extends Component {
 								</Col>
 							</Row>
 						</Container>
+						</div>
+						
 						<div className="endingContent" ref={ div => this.endingContent = div }>
 						<h1 ref={ h1 => this.line = h1 }>Would you go out with me?</h1>
 							<Container>

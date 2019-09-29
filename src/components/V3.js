@@ -3,7 +3,7 @@ import { TimelineLite } from 'gsap/all';
 import CSSPlugin from 'gsap/CSSPlugin';
 import Loading from "./Loading";
 import { useAuth } from "../context/auth";
-import Access from './Access';
+import AccessV3 from './AccessV3';
 
 const C = CSSPlugin;
 
@@ -15,7 +15,7 @@ const iconsArray = [
 ];
 
 
-class TimelineSequence extends Component {
+class TimelineSequenceV3 extends Component {
 
 	
 	constructor(props){
@@ -66,7 +66,7 @@ class TimelineSequence extends Component {
                             <h2 ref={ h2 => this.warn = h2 }>The passcode only works once; only press "Enter" if you have at least 10 minutes to spare.</h2>
 							<h2 ref={ h2 => this.msg = h2 }>Please ensure that your sound is turned up before clicking "Enter".</h2>
                             <div ref={ div => this.form = div}>
-                                <Access props={this.props}/>
+                                <AccessV3 props={this.props}/>
                             </div>
 							<div className="nav">
 								{ iconsArray.map( (icon, index) => {
@@ -110,4 +110,4 @@ class TimelineSequence extends Component {
 
 }
 
-export default TimelineSequence;
+export default TimelineSequenceV3;
