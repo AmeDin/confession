@@ -286,7 +286,7 @@ class HiddenPageV3 extends Component {
                             <h2 ref={ h2 => this.endline10 = h2 }>I can wait until you are ready.</h2>
                             <h2 ref={ h2 => this.endline11 = h2 }>85059575 is the number that you can reach out to me.</h2>
                             <h2 ref={ h2 => this.endline12 = h2 }>I will always be waiting faithfully.</h2>
-                            <h2 ref={ h2 => this.endline13 = h2 }>Until you would be mine literally.</h2>
+                            <h2 ref={ h2 => this.endline13 = h2 }>Until the day you would be mine literally.</h2>
 							<img ref={ img => this.yesImg = img } src={yesImg} alt="success" />
 						</div>
 					<div className="endingModal" ref={ div => this.endingModal = div }>		
