@@ -6,6 +6,7 @@ import { Button, Container, Row, Col, Form, FormGroup, Input,
 import Loading from "./Loading";
 import mp4 from '../assets/confess.mp4'
 import mp3 from '../assets/end.mp3'
+import amethyst from '../assets/trimbtbf.mp3'
 import yesImg from '../assets/ls.gif'
 import noImg from '../assets/hb.gif'
 import axios from 'axios';
@@ -58,6 +59,7 @@ class HiddenPageV3 extends Component {
 		this.endline12 = null;
 		this.endline13 = null;
 		this.endline14 = null;
+		this.endline15 = null;
 		this.yesImg = null;
 		
     }
@@ -113,6 +115,7 @@ class HiddenPageV3 extends Component {
 			.from(this.endline12, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline13, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline14, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline15, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.yesImg, 2.5, { scale: .5, autoAlpha: 0 }, "feature");
 		
 			this.onTrackChange(mp3)
@@ -164,7 +167,7 @@ class HiddenPageV3 extends Component {
 		setTimeout(() => {
 			document.querySelector(".videoContent").style.display = "none";
             document.querySelector(".endingContent").style.display = "inline";
-            this.onTrackChange(mp3)
+            this.onTrackChange(amethyst)
 			this.logoTl3.play()
 		  }, 2500);
 		  const answer = true
@@ -293,8 +296,9 @@ class HiddenPageV3 extends Component {
                             <h2 ref={ h2 => this.endline10 = h2 }>There's no need to hurry.</h2>
                             <h2 ref={ h2 => this.endline11 = h2 }>I can wait until you are ready.</h2>
                             <h2 ref={ h2 => this.endline12 = h2 }>85059575 is the number that you can reach out to me.</h2>
-                            <h2 ref={ h2 => this.endline13 = h2 }>I will always be waiting faithfully.</h2>
-                            <h2 ref={ h2 => this.endline14 = h2 }>Until the day you would be mine literally.</h2>
+                            <h2 ref={ h2 => this.endline13 = h2 }>We can start slow by keeping each other company.</h2>
+                            <h2 ref={ h2 => this.endline14 = h2 }>I will always be waiting faithfully.</h2>
+                            <h2 ref={ h2 => this.endline15 = h2 }>Until the day you would be mine literally.</h2>
 							<img ref={ img => this.yesImg = img } src={yesImg} alt="success" />
 						</div>
 					<div className="endingModal" ref={ div => this.endingModal = div }>		
