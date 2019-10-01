@@ -57,6 +57,8 @@ class HiddenPageV3 extends Component {
 		this.endline10 = null;
 		this.endline11 = null;
 		this.endline12 = null;
+		this.endline13 = null;
+		this.endline14 = null;
 		this.yesImg = null;
 		
     }
@@ -111,6 +113,7 @@ class HiddenPageV3 extends Component {
 			.from(this.endline11, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline12, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline13, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline14, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.yesImg, 3, { scale: .5, autoAlpha: 0 }, "feature");
 		
 			this.onTrackChange(mp3)
@@ -284,11 +287,12 @@ class HiddenPageV3 extends Component {
                             <h2 ref={ h2 => this.endline6 = h2 }>So that we can start making memory.</h2>
                             <h2 ref={ h2 => this.endline7 = h2 }>That will last for eternity.</h2>
                             <h2 ref={ h2 => this.endline8 = h2 }>I like you, so would you go out with me?</h2>
-                            <h2 ref={ h2 => this.endline9 = h2 }>There's no need to hurry.</h2>
-                            <h2 ref={ h2 => this.endline10 = h2 }>I can wait until you are ready.</h2>
-                            <h2 ref={ h2 => this.endline11 = h2 }>85059575 is the number that you can reach out to me.</h2>
-                            <h2 ref={ h2 => this.endline12 = h2 }>I will always be waiting faithfully.</h2>
-                            <h2 ref={ h2 => this.endline13 = h2 }>Until the day you would be mine literally.</h2>
+                            <h2 ref={ h2 => this.endline9 = h2 }>I meant what I wrote here, like really!.</h2>
+                            <h2 ref={ h2 => this.endline10 = h2 }>There's no need to hurry.</h2>
+                            <h2 ref={ h2 => this.endline11 = h2 }>I can wait until you are ready.</h2>
+                            <h2 ref={ h2 => this.endline12 = h2 }>85059575 is the number that you can reach out to me.</h2>
+                            <h2 ref={ h2 => this.endline13 = h2 }>I will always be waiting faithfully.</h2>
+                            <h2 ref={ h2 => this.endline14 = h2 }>Until the day you would be mine literally.</h2>
 							<img ref={ img => this.yesImg = img } src={yesImg} alt="success" />
 						</div>
 					<div className="endingModal" ref={ div => this.endingModal = div }>		
