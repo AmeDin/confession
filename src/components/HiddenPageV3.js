@@ -36,7 +36,6 @@ class HiddenPageV3 extends Component {
 		this.line12 = null;
 		this.btnContinue = null;
 
-		
 		this.logoTl2 = new TimelineLite({ paused:true });
 		this.vid = null;
 		this.btnContinueTwo = null;
@@ -77,18 +76,18 @@ class HiddenPageV3 extends Component {
 			.set(this.content, { autoAlpha: 1 })
 			.from(this.head, 4, { top: 100, autoAlpha: 0 })
 			.to(this.head, 2, { opacity: 0, autoAlpha: 0 })
-			.from(this.line1, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line2, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line3, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line4, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line5, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line6, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line7, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line8, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line9, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line10, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line11, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line12, 3, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line1, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line2, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line3, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line4, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line5, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line6, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line7, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line8, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line9, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line10, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line11, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line12, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.btnContinue, 3, { scale: .5, autoAlpha: 0 }, "feature") ; 
 		this.logoTl.play()
 
@@ -99,22 +98,22 @@ class HiddenPageV3 extends Component {
 			.from(this.btnBack, 3, { scale: .5, autoAlpha: 0 }, "feature");
 
 		this.logoTl3.set(this.endingContent, { autoAlpha: 1 })
-			.from(this.endline, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline1, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline2, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline3, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline4, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline5, 4, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline6, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline7, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline8, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline9, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline10, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline11, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline1, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline2, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline3, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline4, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline5, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline6, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline7, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline8, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline9, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline10, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline11, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline12, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline13, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline14, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.yesImg, 3, { scale: .5, autoAlpha: 0 }, "feature");
+			.from(this.endline13, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline14, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.yesImg, 2.5, { scale: .5, autoAlpha: 0 }, "feature");
 		
 			this.onTrackChange(mp3)
 		// setTimeout(() => {
@@ -269,7 +268,7 @@ class HiddenPageV3 extends Component {
 											style={{marginTop: '2rem', backgroundColor: "#73b102"}}
 											block
 											onClick={this.toggleContinue}>
-											Continue
+											Next
 										</Button>
 									</div>
 								</Col>

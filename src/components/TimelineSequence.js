@@ -4,14 +4,15 @@ import CSSPlugin from 'gsap/CSSPlugin';
 import Loading from "./Loading";
 import { useAuth } from "../context/auth";
 import Access from './Access';
+import lock from '../assets/lock.png'
+import unlock from '../assets/unlock.png'
 
 const C = CSSPlugin;
 
 // icons will be animated using a stagger method
 const iconsArray = [
-	{ src: "https://image.shutterstock.com/image-vector/10-minutes-timer-260nw-197413463.jpg", width: "65", height: "59" },
-	{ src: "https://previews.123rf.com/images/dirkercken/dirkercken1401/dirkercken140100156/25263130-ready-to-go-or-job-done-slogan-icon-or-sign-work-accomplished-finished-and-well-done-.jpg", width: "65", height: "59" },
-	{ src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYglyJRwnFj9od7emyGblacb1nQZd6V0nalMhZ0HhaPoIkycS", width: "65", height: "59" }
+	{ src: lock, width: "65", height: "59" },
+	{ src: unlock, width: "65", height: "59" },
 ];
 
 
@@ -42,9 +43,9 @@ class TimelineSequence extends Component {
 			.to(this.head, 2, { opacity: 0, autoAlpha: 0 })
 			.from(this.subhead, 4, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			// .from(this.msg2, 2, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
-			.from(this.warn, 5, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
+			.from(this.warn, 4, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			.from(this.msg, 2, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
-			.from(this.form, 5, { scale: .5, autoAlpha: 0 }, "feature") // added 0.5 seconds after end of timeline
+			.from(this.form, 2, { scale: .5, autoAlpha: 0 }, "feature") // added 0.5 seconds after end of timeline
 			.staggerFrom(this.icons, 0.5, { scale: 0, autoAlpha: 0 }, 0.1); //animate all icons with 0.1 second stagger
 		this.logoTl.play()
 	}
@@ -64,7 +65,7 @@ class TimelineSequence extends Component {
 							<h2 ref={ h2 => this.subhead = h2 }>You have landed on this page using the link you received.</h2>
 							{/* <h2 ref={ h2 => this.msg2 = h2 }>For better experience, turn on the volume.</h2> */}
                             <h2 ref={ h2 => this.warn = h2 }>The passcode only works once; only press "Enter" if you have at least 10 minutes to spare.</h2>
-							<h2 ref={ h2 => this.msg = h2 }>Please ensure that your sound is turned up before clicking "Enter".</h2>
+							<h2 ref={ h2 => this.msg = h2 }>Please ensure that your sound is turned on before clicking "Enter".</h2>
                             <div ref={ div => this.form = div}>
                                 <Access props={this.props}/>
                             </div>
