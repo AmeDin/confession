@@ -24,10 +24,10 @@ function App(props) {
     
     <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
       <Router>
-          <Route exact path="/" component={TimelineSequence} />
+          <Route exact path="/v3" component={TimelineSequence} />
           {/* <Route exact path="/hide" component={HiddenPage} /> */}
           {/* <Route exact path="/hide" component={HiddenPageV2} /> */}
-          <Route exact path="/v3" component={TimelineSequenceV3} />
+          <Route exact path="/" component={TimelineSequenceV3} />
           <PrivateRoute path="/hidden" component={HiddenPageHook} />
           <PrivateRoute path="/hiddenV3" component={HiddenPageHookV3} />
       </Router>
