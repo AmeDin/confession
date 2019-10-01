@@ -151,6 +151,9 @@ class HiddenPageV3 extends Component {
     }
 
 	continueTwoClick = (e) => {
+		var v = document.querySelector(".react-player")
+		if(!v.paused)
+			v.pause()
         this.toggleContinue()
 		this.logoTl2
 			.set(this.vidContent, { autoAlpha: 1 })
