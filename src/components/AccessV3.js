@@ -36,7 +36,6 @@ function AccessV3(props) {
   return (
     <Form onSubmit={validatePasscode}>
         <FormGroup>
-            <Label for="code">Passcode</Label>
             <Input 
                 type="text"
                 name="code"

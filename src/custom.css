@@ -1,6 +1,6 @@
 body {
-    background-color: #000!important;
-    color: #fff;
+    /* background-color: #fff!important; */
+    color: #2B2D2F;
   }
   
   code {
@@ -47,8 +47,7 @@ video {
   @media screen and (min-width: 800px) {
     .demoWrapper {
         margin: 0 auto;
-        -webkit-font-smoothing: antialiased;
-        color: black;
+        -webkit-font-smoothing: antialiased;    
         overflow: hidden;
         max-width: 600px;
         min-height: 600px;
@@ -65,18 +64,15 @@ video {
       margin-top: 10px;
       font-size: 30px;
       font-weight: normal;
-      color: #fff;
   }
   h2 {
       position: relative;
       font-size: 22px;
       font-weight: normal;
-      color: #cfcfcf;
   }
   .demoWrapper {
       margin: 0 auto;
       -webkit-font-smoothing: antialiased;
-      color: black;
       overflow: hidden;
   }
   
@@ -139,14 +135,14 @@ video {
   }
   
   .gsap-btn {
-      background-color: #73b102;
+      background-color: #4e9815;
       color: #fff;
   }
   
   .gsap-btn:hover,
   .gsap-btn:active,
   .gsap-btn:focus {
-      background-color: #88ce02;
+      background-color: #4e9815;
   }
 
   .isSafari {

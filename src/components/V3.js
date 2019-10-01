@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { TimelineLite } from 'gsap/all';
+import { TimelineLite, Linear } from 'gsap/all';
 import CSSPlugin from 'gsap/CSSPlugin';
 import Loading from "./Loading";
 import { useAuth } from "../context/auth";
@@ -20,6 +20,11 @@ class TimelineSequenceV3 extends Component {
 	
 	constructor(props){
 		super(props);
+
+		this.bgTl = new TimelineLite({ paused:true });
+		this.bgColor = null
+		this.containerParent = null
+
 		this.logoTl = new TimelineLite({ paused:true });
 
 		this.content = null;
@@ -47,12 +52,21 @@ class TimelineSequenceV3 extends Component {
 			.from(this.form, 3, { scale: .3, autoAlpha: 0 }, "feature") // added 0.5 seconds after end of timeline
 			.staggerFrom(this.icons, 0.5, { scale: 0, autoAlpha: 0 }, 0.1); //animate all icons with 0.1 second stagger
 		this.logoTl.play()
+
+		this.bgTl
+			.set(this.containerParent, { autoAlpha: 1 })// show content div
+			.to(this.bgColor, 5, {backgroundColor : 'rgba(255, 255, 255, 255)'});
+		
+
+			setTimeout(() => {
+				this.bgTl.play()
+				  }, 6000);
 	}
 
 	render(){
 		return (
-            <div className="container">
-			<div className="row">
+            <div className="container" ref={ div => this.containerParent = div }>
+			<div className="row" ref={ div => this.bgColor = div } style={{backgroundColor: "#000"}}>
 				<div className="col-12 mt-3">
 
 					<div className="demoWrapper">
