@@ -3,7 +3,7 @@ import { TimelineLite, Linear } from 'gsap/all';
 import CSSPlugin from 'gsap/CSSPlugin';
 import Loading from "./Loading";
 import { useAuth } from "../context/auth";
-import AccessV3 from './AccessV3';
+import AccessRachel from './AccessRachel';
 import lock from '../assets/lock.png'
 import unlock from '../assets/unlock.png'
 
@@ -15,7 +15,7 @@ const iconsArray = [
 	{ src: unlock, width: "65", height: "59" },
 ];
 
-class TimelineSequenceV3 extends Component {
+class RachelTimeSequence extends Component {
 
 	
 	constructor(props){
@@ -80,7 +80,7 @@ class TimelineSequenceV3 extends Component {
                             <h2 ref={ h2 => this.warn = h2 }>The passcode only works once; only press "Enter" if you have at least 10 minutes to spare.</h2>
 							<h2 ref={ h2 => this.msg = h2 }>Please ensure that your sound is turned on before clicking "Enter".</h2>
                             <div ref={ div => this.form = div}>
-                                <AccessV3 props={this.props}/>
+                                <AccessRachel props={this.props}/>
                             </div>
 							<div className="nav" style={{float: 'right'}}>
 								{ iconsArray.map( (icon, index) => {
@@ -126,4 +126,4 @@ class TimelineSequenceV3 extends Component {
 
 }
 
-export default TimelineSequenceV3;
+export default RachelTimeSequence;

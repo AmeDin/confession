@@ -14,11 +14,11 @@ import axios from 'axios';
 const C = CSSPlugin;
 
 
-class HiddenPageV3 extends Component {
+class HiddenPageRachel extends Component {
 	
 	constructor(props){
 		super(props);
-		this.state = { details: '', answer: true, modalContinue: false, isPlaying: null};
+		this.state = { details: '', answer: true, modalContinue: false, isPlaying: null, screenVh: 'auto'};
 
 		
 		this.bgTl = new TimelineLite({ paused:true });
@@ -40,6 +40,10 @@ class HiddenPageV3 extends Component {
 		this.line10 = null;
 		this.line11 = null;
 		this.line12 = null;
+		this.line13 = null;
+		this.line14 = null;
+		this.line15 = null;
+		this.line16 = null;
 		this.btnContinue = null;
 
 		this.logoTl2 = new TimelineLite({ paused:true });
@@ -100,6 +104,10 @@ class HiddenPageV3 extends Component {
 			.from(this.line10, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line11, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line12, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line13, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line14, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line15, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line16, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.btnContinue, 3, { scale: .5, autoAlpha: 0 }, "feature") ; 
 
 		this.logoTl2
@@ -134,7 +142,7 @@ class HiddenPageV3 extends Component {
 			this.bgTl.play()
 			setTimeout(() => {
 				this.logoTl.play()
-				}, 5000);
+				}, 3000);
 	}
 
 
@@ -142,6 +150,10 @@ class HiddenPageV3 extends Component {
 		this.logoTlB
 			.set(this.content, { autoAlpha: 1 })
 			.to(this.btnContinue, 0.5, { opacity: 0, autoAlpha: 0 })
+			.to(this.line16, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line15, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line14, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line13, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line12, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line11, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line10, 0.2, { opacity: 0, autoAlpha: 0 })
@@ -158,6 +170,7 @@ class HiddenPageV3 extends Component {
         
         this.onTrackPause(mp3)
 		setTimeout(() => {
+			this.setState({ screenVh: "100vh" })
 			document.querySelector(".content").style.display = "none"
 			document.querySelector(".videoContent").style.display = "inline"
 			this.logoTl2.play()
@@ -177,9 +190,10 @@ class HiddenPageV3 extends Component {
 			.to(this.vid, 0.2, { opacity: 0, autoAlpha: 0 })
 		this.logoTl2.play()
 		setTimeout(() => {
+			this.setState({ screenVh: "auto" })
 			document.querySelector(".videoContent").style.display = "none";
             document.querySelector(".endingContent").style.display = "inline";
-            this.onTrackChange(amethyst)
+			this.onTrackChange(amethyst)
 			this.logoTl3.play()
 		  }, 2500);
 		  const answer = true
@@ -188,12 +202,7 @@ class HiddenPageV3 extends Component {
 			answer,
 			details
 		  }).then(result => {
-			this.logoTl5.reverse()
-			setTimeout(() => {
-				document.querySelector(".noContent").style.display = "none";
-				document.querySelector(".noCloseContent").style.display = "inline";
-				this.logoTl7.play()
-			}, 1500);
+			
 		  }).catch(e => {
 			
 		  });
@@ -225,7 +234,7 @@ class HiddenPageV3 extends Component {
 
 	render(){
 		return (
-            <div ref={ div => this.containerParent = div } style={{backgroundColor: "#fff", height: "100vh"}}>
+            <div ref={ div => this.containerParent = div } style={{backgroundColor: "#fff", height: this.state.screenVh}}>
             <div className="container">
 			<div className="row">
 				<div className="col-12 mt-3">
@@ -238,18 +247,22 @@ class HiddenPageV3 extends Component {
 						</audio>
 						<div className="content" ref={ div => this.content = div }>
                             <div ref={ div => this.head = div}><Loading /></div>
-							<h2 ref={ h2 => this.line1 = h2 }>I can't tell you what it really is.</h2>
-                            <h2 ref={ h2 => this.line2 = h2 }>I can only try to describe this.</h2>
-                            <h2 ref={ h2 => this.line3 = h2 }>Each time you work standing I notice.</h2>
-                            <h2 ref={ h2 => this.line4 = h2 }>Looking at your beautiful hair gradually had me mesmerise.</h2>
-                            <h2 ref={ h2 => this.line5 = h2 }>Before I know it, emotion starts to materialise.</h2>
-                            <h2 ref={ h2 => this.line6 = h2 }>In my mind I immediately began to devise.</h2>
-                            <h2 ref={ h2 => this.line7 = h2 }>To leverage on rap which I expertise.</h2>
-                            <h2 ref={ h2 => this.line8 = h2 }>Tinkering with music composed by eminem whom i idolise.</h2>
-                            <h2 ref={ h2 => this.line9 = h2 }>With his lyrics i had improvise.</h2>
-                            <h2 ref={ h2 => this.line10 = h2 }>Rapping it myself would just jeopardise.</h2>
-                            <h2 ref={ h2 => this.line11 = h2 }>This music video is a confession to surprise.</h2>
-                            <h2 ref={ h2 => this.line12 = h2 }>Milady, Elise.</h2>
+							<h2 ref={ h2 => this.line1 = h2 }>At first sight, I just can't tell.</h2>
+                            <h2 ref={ h2 => this.line2 = h2 }>I could have been hallucinating to have seen an angel.</h2>
+                            <h2 ref={ h2 => this.line3 = h2 }>You've struck me a blow that's fatal.</h2>
+                            <h2 ref={ h2 => this.line4 = h2 }>Emotions inside me starts to ripple.</h2>
+                            <h2 ref={ h2 => this.line5 = h2 }>It feels like its gonna pop any moment like a bubble.</h2>
+                            <h2 ref={ h2 => this.line6 = h2 }>Approaching you was instinctual.</h2>
+                            <h2 ref={ h2 => this.line7 = h2 }>However before you I turned frozen as glacial.</h2>
+                            <h2 ref={ h2 => this.line8 = h2 }>Each attempt of converse, my head starts to jumble.</h2>
+                            <h2 ref={ h2 => this.line9 = h2 }>This is so not like me which i find it unusual.</h2>
+                            <h2 ref={ h2 => this.line10 = h2 }>Regardless, I continue to pursue this gamble.</h2>
+                            <h2 ref={ h2 => this.line11 = h2 }>Finding opportunity to mingle.</h2>
+                            <h2 ref={ h2 => this.line12 = h2 }>And make you giggle.</h2>
+                            <h2 ref={ h2 => this.line13 = h2 }>Would you be my someone special?</h2>
+                            <h2 ref={ h2 => this.line14 = h2 }>I shall be loyal so let's be a couple.</h2>
+                            <h2 ref={ h2 => this.line15 = h2 }>This music video is a confession to make you startle.</h2>
+                            <h2 ref={ h2 => this.line16 = h2 }>Milady, Rachel.</h2>
 							<div ref={ div => this.btnContinue = div}>
 								<Button 
 									color="dark"
@@ -379,4 +392,4 @@ class HiddenPageV3 extends Component {
 
 }
 
-export default HiddenPageV3;
+export default HiddenPageRachel;
