@@ -86,7 +86,7 @@ class HiddenPageRachel extends Component {
 		
 		this.bgTl
 			.set(this.containerParent, { autoAlpha: 1 })// show content div
-			.to(this.containerParent, 5, {backgroundColor : 'rgba(0, 0, 0)'});
+			.to(this.containerParent, 4, {backgroundColor : 'rgba(0, 0, 0)'});
 
 		this.logoTl
 			.set(this.content, { autoAlpha: 1 })
@@ -253,7 +253,7 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line4 = h2 }>Emotions inside me starts to ripple.</h2>
                             <h2 ref={ h2 => this.line5 = h2 }>It feels like its gonna pop any moment like a bubble.</h2>
                             <h2 ref={ h2 => this.line6 = h2 }>Approaching you was instinctual.</h2>
-                            <h2 ref={ h2 => this.line7 = h2 }>However before you I turned frozen as glacial.</h2>
+                            <h2 ref={ h2 => this.line7 = h2 }>But before you I turned frozen as glacial.</h2>
                             <h2 ref={ h2 => this.line8 = h2 }>Each attempt of converse, my head starts to jumble.</h2>
                             <h2 ref={ h2 => this.line9 = h2 }>This is so not like me which i find it unusual.</h2>
                             <h2 ref={ h2 => this.line10 = h2 }>Regardless, I continue to pursue this gamble.</h2>
