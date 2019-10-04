@@ -44,6 +44,10 @@ class HiddenPageRachel extends Component {
 		this.line14 = null;
 		this.line15 = null;
 		this.line16 = null;
+		this.line17 = null;
+		this.line18 = null;
+		this.line19 = null;
+		this.line20 = null;
 		this.btnContinue = null;
 
 		this.logoTl2 = new TimelineLite({ paused:true });
@@ -108,6 +112,10 @@ class HiddenPageRachel extends Component {
 			.from(this.line14, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line15, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line16, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line17, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line18, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line19, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line20, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.btnContinue, 3, { scale: .5, autoAlpha: 0 }, "feature") ; 
 
 		this.logoTl2
@@ -150,6 +158,10 @@ class HiddenPageRachel extends Component {
 		this.logoTlB
 			.set(this.content, { autoAlpha: 1 })
 			.to(this.btnContinue, 0.5, { opacity: 0, autoAlpha: 0 })
+			.to(this.line20, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line19, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line18, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line17, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line16, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line15, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line14, 0.2, { opacity: 0, autoAlpha: 0 })
@@ -255,14 +267,18 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line6 = h2 }>Approaching you was instinctual.</h2>
                             <h2 ref={ h2 => this.line7 = h2 }>But before you I turned frozen as glacial.</h2>
                             <h2 ref={ h2 => this.line8 = h2 }>Each attempt of converse, my head starts to jumble.</h2>
-                            <h2 ref={ h2 => this.line9 = h2 }>This is so not like me which i find it unusual.</h2>
-                            <h2 ref={ h2 => this.line10 = h2 }>Regardless, I continue to pursue this gamble.</h2>
-                            <h2 ref={ h2 => this.line11 = h2 }>Finding opportunity to mingle.</h2>
-                            <h2 ref={ h2 => this.line12 = h2 }>And make you giggle.</h2>
-                            <h2 ref={ h2 => this.line13 = h2 }>Would you be my someone special?</h2>
-                            <h2 ref={ h2 => this.line14 = h2 }>I shall be loyal so let's be a couple.</h2>
-                            <h2 ref={ h2 => this.line15 = h2 }>This music video is a confession to make you startle.</h2>
-                            <h2 ref={ h2 => this.line16 = h2 }>Milady, Rachel.</h2>
+                            <h2 ref={ h2 => this.line9 = h2 }>100% sure i've made you uncomfortable.</h2>
+                            <h2 ref={ h2 => this.line10 = h2 }>This is so not like me which i find it unusual.</h2>
+                            <h2 ref={ h2 => this.line11 = h2 }>Full of regret to how the initial impression was terrible.</h2>
+                            <h2 ref={ h2 => this.line12 = h2 }>Regardless, I continue to pursue this gamble.</h2>
+                            <h2 ref={ h2 => this.line13 = h2 }>Giving up now, ain't gonna let me see how this will unfold.</h2>
+                            <h2 ref={ h2 => this.line14 = h2 }>To continue find opportunity to mingle.</h2>
+                            <h2 ref={ h2 => this.line15 = h2 }>To be me who is affable.</h2>
+                            <h2 ref={ h2 => this.line16 = h2 }>I hope to make you giggle.</h2>
+                            <h2 ref={ h2 => this.line17 = h2 }>Would you be my someone special?</h2>
+                            <h2 ref={ h2 => this.line18 = h2 }>I shall be loyal so let's be a couple.</h2>
+                            <h2 ref={ h2 => this.line19 = h2 }>This music video is a confession to make you startle.</h2>
+                            <h2 ref={ h2 => this.line20 = h2 }>Milady, Rachel.</h2>
 							<div ref={ div => this.btnContinue = div}>
 								<Button 
 									color="dark"
