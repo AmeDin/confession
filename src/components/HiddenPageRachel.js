@@ -48,6 +48,7 @@ class HiddenPageRachel extends Component {
 		this.line18 = null;
 		this.line19 = null;
 		this.line20 = null;
+		this.line21 = null;
 		this.btnContinue = null;
 
 		this.logoTl2 = new TimelineLite({ paused:true });
@@ -116,6 +117,7 @@ class HiddenPageRachel extends Component {
 			.from(this.line18, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line19, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line20, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line21, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.btnContinue, 3, { scale: .5, autoAlpha: 0 }, "feature") ; 
 
 		this.logoTl2
@@ -158,6 +160,7 @@ class HiddenPageRachel extends Component {
 		this.logoTlB
 			.set(this.content, { autoAlpha: 1 })
 			.to(this.btnContinue, 0.5, { opacity: 0, autoAlpha: 0 })
+			.to(this.line21, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line20, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line19, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line18, 0.2, { opacity: 0, autoAlpha: 0 })
@@ -268,17 +271,18 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line7 = h2 }>But before you I turned frozen as glacial.</h2>
                             <h2 ref={ h2 => this.line8 = h2 }>Each attempt of converse, my head starts to jumble.</h2>
                             <h2 ref={ h2 => this.line9 = h2 }>100% sure i've made you uncomfortable.</h2>
-                            <h2 ref={ h2 => this.line10 = h2 }>This is so not like me which i find it unusual.</h2>
-                            <h2 ref={ h2 => this.line11 = h2 }>Full of regret to how the initial impression was terrible.</h2>
+                            <h2 ref={ h2 => this.line10 = h2 }>This is not like me which i find it unusual.</h2>
+                            <h2 ref={ h2 => this.line11 = h2 }>Full of regret to how I felt the initial impression was terrible.</h2>
                             <h2 ref={ h2 => this.line12 = h2 }>Regardless, I continue to pursue this gamble.</h2>
-                            <h2 ref={ h2 => this.line13 = h2 }>Giving up now, ain't gonna let me see how this will unfold.</h2>
-                            <h2 ref={ h2 => this.line14 = h2 }>To continue find opportunity to mingle.</h2>
-                            <h2 ref={ h2 => this.line15 = h2 }>To be me who is affable.</h2>
-                            <h2 ref={ h2 => this.line16 = h2 }>I hope to make you giggle.</h2>
-                            <h2 ref={ h2 => this.line17 = h2 }>Would you be my someone special?</h2>
-                            <h2 ref={ h2 => this.line18 = h2 }>I shall be loyal so let's be a couple.</h2>
-                            <h2 ref={ h2 => this.line19 = h2 }>This music video is a confession to make you startle.</h2>
-                            <h2 ref={ h2 => this.line20 = h2 }>Milady, Rachel.</h2>
+                            <h2 ref={ h2 => this.line13 = h2 }>No matter how much it's suffocating me, I must not crumble.</h2>
+                            <h2 ref={ h2 => this.line14 = h2 }>Bear it in silence and not lament on something that's irreversible.</h2>	
+                            <h2 ref={ h2 => this.line15 = h2 }>There's no other way but move forward to see how it will unravel.</h2>
+                            <h2 ref={ h2 => this.line16 = h2 }>Keep up in finding opportunity to mingle.</h2>
+                            <h2 ref={ h2 => this.line17 = h2 }>And hopefully I can make you giggle.</h2>
+                            <h2 ref={ h2 => this.line18 = h2 }>I want you to be my someone special.</h2>
+                            <h2 ref={ h2 => this.line19 = h2 }>I shall be loyal so be my girl.</h2>
+                            <h2 ref={ h2 => this.line20 = h2 }>This music video is a confession to make you startle.</h2>
+                            <h2 ref={ h2 => this.line21 = h2 }>Milady, Rachel.</h2>
 							<div ref={ div => this.btnContinue = div}>
 								<Button 
 									color="dark"
@@ -333,11 +337,11 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.endline5 = h2 }>The latter hopefully.</h2>
                             <h2 ref={ h2 => this.endline6 = h2 }>So that we can start making memory.</h2>
                             <h2 ref={ h2 => this.endline7 = h2 }>That will last for eternity.</h2>
-                            <h2 ref={ h2 => this.endline8 = h2 }>I like you, so would you go out with me?</h2>
+                            <h2 ref={ h2 => this.endline8 = h2 }>I like you, I hope you feel the same way about me.</h2>
                             <h2 ref={ h2 => this.endline9 = h2 }>I meant what I wrote here, like really!</h2>
                             <h2 ref={ h2 => this.endline10 = h2 }>There's no need to hurry.</h2>
                             <h2 ref={ h2 => this.endline11 = h2 }>I can wait until you are ready.</h2>
-                            <h2 ref={ h2 => this.endline12 = h2 }>85059575 is the number that you can reach out to me.</h2>
+                            <h2 ref={ h2 => this.endline12 = h2 }>For you, I'll make my time free.</h2>
                             <h2 ref={ h2 => this.endline13 = h2 }>We can start slow by keeping each other company.</h2>
                             <h2 ref={ h2 => this.endline14 = h2 }>I will always be waiting faithfully.</h2>
                             <h2 ref={ h2 => this.endline15 = h2 }>Until the day you would be mine literally.</h2>
