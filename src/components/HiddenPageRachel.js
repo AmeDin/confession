@@ -91,7 +91,7 @@ class HiddenPageRachel extends Component {
 		
 		this.bgTl
 			.set(this.containerParent, { autoAlpha: 1 })// show content div
-			.to(this.containerParent, 4, {backgroundColor : 'rgba(0, 0, 0)'});
+			.to(this.containerParent, 3, {backgroundColor : 'rgba(0, 0, 0)'});
 
 		this.logoTl
 			.set(this.content, { autoAlpha: 1 })
@@ -152,7 +152,7 @@ class HiddenPageRachel extends Component {
 			this.bgTl.play()
 			setTimeout(() => {
 				this.logoTl.play()
-				}, 3000);
+				}, 2500);
 	}
 
 
@@ -189,7 +189,7 @@ class HiddenPageRachel extends Component {
 			document.querySelector(".content").style.display = "none"
 			document.querySelector(".videoContent").style.display = "inline"
 			this.logoTl2.play()
-		  }, 5000);
+		  }, 4000);
 		
     }
 
@@ -275,7 +275,7 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line11 = h2 }>Full of regret to how I felt the initial impression was terrible.</h2>
                             <h2 ref={ h2 => this.line12 = h2 }>Regardless, I continue to pursue this gamble.</h2>
                             <h2 ref={ h2 => this.line13 = h2 }>No matter how much it's suffocating me, I must not crumble.</h2>
-                            <h2 ref={ h2 => this.line14 = h2 }>Bear it in silence and not lament on something that's irreversible.</h2>	
+                            <h2 ref={ h2 => this.line14 = h2 }>Bear the remorse in silence and not lament on something that's irreversible.</h2>	
                             <h2 ref={ h2 => this.line15 = h2 }>There's no other way but move forward to see how it will unravel.</h2>
                             <h2 ref={ h2 => this.line16 = h2 }>Keep up in finding opportunity to mingle.</h2>
                             <h2 ref={ h2 => this.line17 = h2 }>And hopefully I can make you giggle.</h2>
