@@ -4,16 +4,9 @@ import CSSPlugin from 'gsap/CSSPlugin';
 import Loading from "./Loading";
 import { useAuth } from "../context/auth";
 import AccessRachel from './AccessRachel';
-import lock from '../assets/lock.png'
-import unlock from '../assets/unlock.png'
 
 const C = CSSPlugin;
 
-// icons will be animated using a stagger method
-const iconsArray = [
-	{ src: lock, width: "65", height: "59" },
-	{ src: unlock, width: "65", height: "59" },
-];
 
 class RachelTimeSequence extends Component {
 
@@ -33,7 +26,6 @@ class RachelTimeSequence extends Component {
 		this.msg = null;
 		this.warn = null;
 		this.form = null;
-		this.icons = [];
 	}
 
 	
@@ -49,7 +41,6 @@ class RachelTimeSequence extends Component {
 			.from(this.warn, 3, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			.from(this.msg, 2, { left: -100, autoAlpha: 0 }, "-=0.25") // added -0.25 seconds prior to end this.of timeline
 			.from(this.form, 3, { scale: .3, autoAlpha: 0 }, "feature") // added 0.5 seconds after end of timeline
-			.staggerFrom(this.icons, 0.5, { scale: 0, autoAlpha: 0 }, 0.1); //animate all icons with 0.1 second stagger
 		this.logoTl.play()
 
 		this.bgTl
@@ -82,17 +73,6 @@ class RachelTimeSequence extends Component {
                             <div ref={ div => this.form = div}>
                                 <AccessRachel props={this.props}/>
                             </div>
-							<div className="nav" style={{float: 'right'}}>
-								{ iconsArray.map( (icon, index) => {
-									const { src, width, height } = icon;
-									return <img
-										key={`icon-${index}`}
-										src={src} width={width} height={height}
-										ref={ img => this.icons[index] = img }
-										style={{background: '#fff'}}
-									/>;
-								})}
-							</div>
 
 						</div>
 

@@ -10,6 +10,8 @@ import amethyst from '../assets/trimbtbf.mp3'
 import yesImg from '../assets/ls.gif'
 import noImg from '../assets/hb.gif'
 import axios from 'axios';
+import lock from '../assets/lock.png'
+import unlock from '../assets/unlock.png'
 
 const C = CSSPlugin;
 
@@ -132,7 +134,7 @@ class HiddenPageRachel extends Component {
 			.from(this.endline2, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline3, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline4, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline5, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline5, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline6, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline7, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline8, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
@@ -270,8 +272,8 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line6 = h2 }>Approaching you was instinctual.</h2>
                             <h2 ref={ h2 => this.line7 = h2 }>But before you I turned frozen as glacial.</h2>
                             <h2 ref={ h2 => this.line8 = h2 }>Each attempt of converse, my head starts to jumble.</h2>
-                            <h2 ref={ h2 => this.line9 = h2 }>100% sure i've made you uncomfortable.</h2>
-                            <h2 ref={ h2 => this.line10 = h2 }>This is not like me which i find it unusual.</h2>
+                            <h2 ref={ h2 => this.line9 = h2 }>Not sure if I've made you uncomfortable.</h2>
+                            <h2 ref={ h2 => this.line10 = h2 }>This is not like me which I find it unusual.</h2>
                             <h2 ref={ h2 => this.line11 = h2 }>Full of regret to how I felt the initial impression was terrible.</h2>
                             <h2 ref={ h2 => this.line12 = h2 }>Regardless, I continue to pursue this gamble.</h2>
                             <h2 ref={ h2 => this.line13 = h2 }>No matter how much it's suffocating me, I must not crumble.</h2>
