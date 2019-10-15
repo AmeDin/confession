@@ -279,8 +279,8 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line13 = h2 }>No matter how much it's suffocating me, I must not crumble.</h2>
                             <h2 ref={ h2 => this.line14 = h2 }>Bear the remorse in silence and not lament on something that's irreversible.</h2>	
                             <h2 ref={ h2 => this.line15 = h2 }>There's no other way but move forward to see how it will unravel.</h2>
-                            <h2 ref={ h2 => this.line16 = h2 }>Keep up in finding opportunity to mingle.</h2>
-                            <h2 ref={ h2 => this.line17 = h2 }>And hopefully I can make you giggle.</h2>
+                            <h2 ref={ h2 => this.line16 = h2 }>Hopefully i can find more opportunity to mingle.</h2>
+                            <h2 ref={ h2 => this.line17 = h2 }>And this time try to make you giggle.</h2>
                             <h2 ref={ h2 => this.line18 = h2 }>I want you to be my someone special.</h2>
                             <h2 ref={ h2 => this.line19 = h2 }>I shall be loyal so be my girl.</h2>
                             <h2 ref={ h2 => this.line20 = h2 }>This music video is a confession to make you startle.</h2>
