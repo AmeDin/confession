@@ -8,10 +8,7 @@ import mp4 from '../assets/confess.mp4'
 import mp3 from '../assets/end.mp3'
 import amethyst from '../assets/trimbtbf.mp3'
 import yesImg from '../assets/ls.gif'
-import noImg from '../assets/hb.gif'
 import axios from 'axios';
-import lock from '../assets/lock.png'
-import unlock from '../assets/unlock.png'
 
 const C = CSSPlugin;
 
@@ -51,6 +48,7 @@ class HiddenPageRachel extends Component {
 		this.line19 = null;
 		this.line20 = null;
 		this.line21 = null;
+		this.line22 = null;
 		this.btnContinue = null;
 
 		this.logoTl2 = new TimelineLite({ paused:true });
@@ -116,10 +114,11 @@ class HiddenPageRachel extends Component {
 			.from(this.line15, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line16, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.line17, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line18, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line19, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line20, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.line21, 2.5, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line18, 2, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line19, 2, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line20, 2, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line21, 2, { left: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.line22, 2, { left: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.btnContinue, 3, { scale: .5, autoAlpha: 0 }, "feature") ; 
 
 		this.logoTl2
@@ -162,15 +161,16 @@ class HiddenPageRachel extends Component {
 		this.logoTlB
 			.set(this.content, { autoAlpha: 1 })
 			.to(this.btnContinue, 0.5, { opacity: 0, autoAlpha: 0 })
-			.to(this.line21, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line20, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line19, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line18, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line17, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line16, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line15, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line14, 0.2, { opacity: 0, autoAlpha: 0 })
-			.to(this.line13, 0.2, { opacity: 0, autoAlpha: 0 })
+			.to(this.line22, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line21, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line20, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line19, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line18, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line17, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line16, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line15, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line14, 0.1, { opacity: 0, autoAlpha: 0 })
+			.to(this.line13, 0.1, { opacity: 0, autoAlpha: 0 })
 			.to(this.line12, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line11, 0.2, { opacity: 0, autoAlpha: 0 })
 			.to(this.line10, 0.2, { opacity: 0, autoAlpha: 0 })
@@ -278,13 +278,14 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.line12 = h2 }>Regardless, I continue to pursue this gamble.</h2>
                             <h2 ref={ h2 => this.line13 = h2 }>No matter how much it's suffocating me, I must not crumble.</h2>
                             <h2 ref={ h2 => this.line14 = h2 }>Bear the remorse in silence and not lament on something that's irreversible.</h2>	
-                            <h2 ref={ h2 => this.line15 = h2 }>There's no other way but move forward to see how it will unravel.</h2>
+                            <h2 ref={ h2 => this.line15 = h2 }>There's no other way but move forward to see how this will unravel.</h2>
                             <h2 ref={ h2 => this.line16 = h2 }>Hopefully i can find more opportunity to mingle.</h2>
                             <h2 ref={ h2 => this.line17 = h2 }>And this time try to make you giggle.</h2>
                             <h2 ref={ h2 => this.line18 = h2 }>I want you to be my someone special.</h2>
-                            <h2 ref={ h2 => this.line19 = h2 }>I shall be loyal so be my girl.</h2>
-                            <h2 ref={ h2 => this.line20 = h2 }>This music video is a confession to make you startle.</h2>
-                            <h2 ref={ h2 => this.line21 = h2 }>Milady, Rachel.</h2>
+                            <h2 ref={ h2 => this.line19 = h2 }>I hope the feeling is mutual.</h2>
+                            <h2 ref={ h2 => this.line20 = h2 }>I shall be loyal so be my girl.</h2>
+                            <h2 ref={ h2 => this.line21 = h2 }>This music video is a confession to make you startle.</h2>
+                            <h2 ref={ h2 => this.line22 = h2 }>Milady, Rachel.</h2>
 							<div ref={ div => this.btnContinue = div}>
 								<Button 
 									color="dark"
