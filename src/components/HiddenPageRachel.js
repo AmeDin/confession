@@ -128,23 +128,25 @@ class HiddenPageRachel extends Component {
 			.from(this.btnBack, 3, { scale: .5, autoAlpha: 0 }, "feature");
 
 		this.logoTl3.set(this.endingContent, { autoAlpha: 1 })
-			.from(this.endline, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline1, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline2, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline3, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline1, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline2, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline3, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline4, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline5, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline6, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline7, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline5, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline6, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline7, 1.5, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline8, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline9, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline10, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline11, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.endline12, 3, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline10, 2.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline11, 2.5, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline12, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline13, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline14, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
 			.from(this.endline15, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
-			.from(this.yesImg, 2.5, { scale: .5, autoAlpha: 0 }, "feature");
+			.from(this.endline16, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.endline17, 2, { right: -100, autoAlpha: 0 }, "-=0.25")
+			.from(this.yesImg, 2, { scale: .5, autoAlpha: 0 }, "feature");
 		
 			this.onTrackChange(mp3)
 		// setTimeout(() => {
@@ -342,12 +344,14 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.endline7 = h2 }>That will last for eternity.</h2>
                             <h2 ref={ h2 => this.endline8 = h2 }>I like you, I hope you feel the same way about me.</h2>
                             <h2 ref={ h2 => this.endline9 = h2 }>I meant what I wrote here, like really!</h2>
-                            <h2 ref={ h2 => this.endline10 = h2 }>There's no need to hurry.</h2>
-                            <h2 ref={ h2 => this.endline11 = h2 }>I can wait until you are ready.</h2>
-                            <h2 ref={ h2 => this.endline12 = h2 }>For you, I'll make my time free.</h2>
-                            <h2 ref={ h2 => this.endline13 = h2 }>We can start slow by keeping each other company.</h2>
-                            <h2 ref={ h2 => this.endline14 = h2 }>I will always be waiting faithfully.</h2>
-                            <h2 ref={ h2 => this.endline15 = h2 }>Until the day you would be mine literally.</h2>
+                            <h2 ref={ h2 => this.endline10 = h2 }>In addition, the emotions I felt is conveyed in the video medley.</h2>
+                            <h2 ref={ h2 => this.endline11 = h2 }>I've composed it by revising the original to express my feelings variously.</h2>
+                            <h2 ref={ h2 => this.endline12 = h2 }>There's no need to hurry.</h2>
+                            <h2 ref={ h2 => this.endline13 = h2 }>I can wait until you are ready.</h2>
+                            <h2 ref={ h2 => this.endline14 = h2 }>For you, I'll make my time free.</h2>
+                            <h2 ref={ h2 => this.endline15 = h2 }>We can start slow by keeping each other company.</h2>
+                            <h2 ref={ h2 => this.endline16 = h2 }>I will always be waiting faithfully.</h2>
+                            <h2 ref={ h2 => this.endline17 = h2 }>Until the day you would be mine literally.</h2>
 							<img ref={ img => this.yesImg = img } src={yesImg} alt="success" />
 						</div>
 					<div className="endingModal" ref={ div => this.endingModal = div }>		
