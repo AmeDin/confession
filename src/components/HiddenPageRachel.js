@@ -260,7 +260,7 @@ class HiddenPageRachel extends Component {
 
 					<div className="demoWrapper">
                         
-						<audio controls loop ref="audio" className="invisible mt-n5">
+						<audio controls ref="audio" className="invisible mt-n5">
 							<source id="audioSource" src={this.state.isPlaying}type="audio/mp3"/>
 							Your browser does not support the audio element.
 						</audio>
