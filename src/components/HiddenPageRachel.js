@@ -344,8 +344,8 @@ class HiddenPageRachel extends Component {
                             <h2 ref={ h2 => this.endline7 = h2 }>That will last for eternity.</h2>
                             <h2 ref={ h2 => this.endline8 = h2 }>I like you, I hope you feel the same way about me.</h2>
                             <h2 ref={ h2 => this.endline9 = h2 }>I meant what I wrote here, like really!</h2>
-                            <h2 ref={ h2 => this.endline10 = h2 }>In addition, the emotions I felt is conveyed in the video medley.</h2>
-                            <h2 ref={ h2 => this.endline11 = h2 }>I've composed it by revising the original to express my feelings that are hard to say directly.</h2>
+                            <h2 ref={ h2 => this.endline10 = h2 }>The emotions I felt are also conveyed in the video medley.</h2>
+                            <h2 ref={ h2 => this.endline11 = h2 }>By revising the original to express my feelings which are hard to tell directly.</h2>
                             <h2 ref={ h2 => this.endline12 = h2 }>There's no need to hurry.</h2>
                             <h2 ref={ h2 => this.endline13 = h2 }>I can wait until you are ready.</h2>
                             <h2 ref={ h2 => this.endline14 = h2 }>For you, I'll make my time free.</h2>
