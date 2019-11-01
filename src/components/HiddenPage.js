@@ -266,7 +266,7 @@ class HiddenPage extends Component {
 							<h2 ref={ h2 => this.line1 = h2 }>I can't tell you what it really is.</h2>
                             <h2 ref={ h2 => this.line2 = h2 }>I can only try to describe this.</h2>
                             <h2 ref={ h2 => this.line3 = h2 }>Each time you work standing I notice.</h2>
-                            <h2 ref={ h2 => this.line4 = h2 }>Looking at your beautiful hair gradually had me mesmerise.</h2>
+                            <h2 ref={ h2 => this.line4 = h2 }>Noticing you gradually had me mesmerise.</h2>
                             <h2 ref={ h2 => this.line5 = h2 }>Before I know it, emotion starts to materialise.</h2>
                             <h2 ref={ h2 => this.line6 = h2 }>In my mind I immediately began to devise.</h2>
                             <h2 ref={ h2 => this.line7 = h2 }>To leverage on rap which I expertise.</h2>
