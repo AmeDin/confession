@@ -207,7 +207,7 @@ class HiddenPageAyesha extends Component {
                             <h2 ref={ h2 => this.line6 = h2 }>Tried my best to put myself in your shoe.</h2>
                             <h2 ref={ h2 => this.line7 = h2 }>When i recompose the original video.</h2>
                             <h2 ref={ h2 => this.line8 = h2 }>That was intended for you know who.</h2>
-                            <h2 ref={ h2 => this.line9 = h2 }>The first is for you as i try putting myself in my shoe.</h2>
+                            <h2 ref={ h2 => this.line9 = h2 }>The first is for you when i try putting myself in your shoe.</h2>
                             <h2 ref={ h2 => this.line10 = h2 }>The subsequent page is the orginal for u know who.</h2>
                             <h2 ref={ h2 => this.line11 = h2 }>Enjoy, woooo!</h2>
 							<div ref={ div => this.btnContinue = div}>
@@ -248,7 +248,7 @@ class HiddenPageAyesha extends Component {
 											style={{marginTop: '2rem', backgroundColor: "#73b102"}}
 											block
 											onClick={this.toggleContinue}>
-											Dont click! Like Really..
+											Next video..
 										</Button>
 									</div>
 								</Col>
