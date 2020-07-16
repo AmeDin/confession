@@ -231,7 +231,7 @@ class HiddenPageV3 extends Component {
 							<h2 ref={ h2 => this.line1 = h2 }>Our encounter was peculiar.</h2>
                             <h2 ref={ h2 => this.line2 = h2 }>CMB in particular.</h2>
                             <h2 ref={ h2 => this.line3 = h2 }>Jom delete app ni sama-sama.</h2>
-                            <h2 ref={ h2 => this.line4 = h2 }>I felt like i've met my cinderalla.</h2>
+                            <h2 ref={ h2 => this.line4 = h2 }>I felt like I've met my cinderalla.</h2>
                             <h2 ref={ h2 => this.line5 = h2 }>You've made me feel like godzilla.</h2>
                             <h2 ref={ h2 => this.line6 = h2 }>Strong and versatile fella.</h2>
                             <h2 ref={ h2 => this.line7 = h2 }>Tapi I tak la sebesar &#128540;.</h2>
