@@ -5,7 +5,7 @@ import { Button, Container, Row, Col, Form, FormGroup, Input,
     ModalHeader, ModalBody, Modal} from 'reactstrap'
 import Loading from "./Loading";
 import mp4 from '../assets/confess.mp4'
-import mp3 from '../assets/end.mp3'
+import mp3 from '../assets/ppbintangsurga.mp3'
 import amethyst from '../assets/trimbtbf.mp3'
 import yesImg from '../assets/ls.gif'
 import noImg from '../assets/hb.gif'
