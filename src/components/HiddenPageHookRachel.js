@@ -1,6 +1,6 @@
 import React from "react";
 import { useAuth } from "../context/auth";
-import HiddenPageRachel from './HiddenPageAyesha';
+import HiddenPageRachel from './HiddenPageMairah';
 
 import ReactDOM from 'react-dom';
 function HiddenPageHookRachel(props) {
